@@ -18,9 +18,9 @@ public class decryption {
             char [] Finalmessage=new char[max];
 
             for (int i=max-1; i>=0;i--){
-                boolean truth= Character.isLowerCase(encrypted[i]);
+                boolean truth1= Character.isLowerCase(encrypted[i]);
                 boolean truth2= Character.isWhitespace(encrypted[i]);
-                if (truth|| truth2){
+                if (truth1|| truth2){
                     Finalmessage[w]=encrypted[i];
                     w++;
                 }
